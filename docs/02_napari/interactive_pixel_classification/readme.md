@@ -9,7 +9,7 @@ We will use the napari plugin [napari-accelerated-pixel-and-object-classificatio
 Open a terminal window and activate your conda environment:
 
 ```
-conda activate devbio-napari-env
+conda activate embo25
 ```
 
 Afterwards, start up Napari:
@@ -18,7 +18,7 @@ Afterwards, start up Napari:
 napari
 ```
 
-Load the "Blobs" example dataset from the menu `File > Open Sample > clEsperanto > Blobs (from ImageJ)`
+Download the [blobs example image](https://github.com/ScaDS/embo-lsm-bia-2025/raw/refs/heads/main/docs/03_bia_bob/data/blobs.tif) and drag-n-drop it on Napari.
 
 ![](apoc1.png)
 

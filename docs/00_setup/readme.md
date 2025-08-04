@@ -30,7 +30,7 @@ We recommend installing [devbio-napari](https://github.com/haesleinhuepf/devbio-
 Use this command from the terminal:
 
 ```
-conda create --name embo25 python=3.11 pyqt devbio-napari -c conda-forge
+conda create --name embo25 python=3.11 pyqt devbio-napari napari=0.5.6 pyclesperanto -c conda-forge
 ```
 
 Afterwards, activate the environment:

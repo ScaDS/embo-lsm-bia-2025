@@ -30,4 +30,8 @@ parts:
     
   - caption: Links
     chapters:
+    - url: https://meetings.embo.org/event/25-lsm
+      title: EMBO LSM 2025
+    - url: https://creativecommons.org/licenses/by/4.0/
+      title: License CC-BY 4.0
     - file: imprint

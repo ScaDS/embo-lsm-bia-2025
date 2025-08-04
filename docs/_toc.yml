@@ -1,0 +1,33 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+  - caption: Setup
+    chapters:
+    - file: 00_setup/readme.md
+    
+  - caption: Python Jupyter Notebooks
+    chapters:
+    - file: 01_juypter_notebooks/01_our_first_juptyer_notebook.ipynb
+    - file: 01_juypter_notebooks/02_Dont_try_this_at_home.ipynb
+    - file: 01_juypter_notebooks/03_image_processing.ipynb
+
+  - caption: Napari
+    chapters:
+    - file: 02_napari/01_napari_introduction.ipynb
+    - file: 02_napari/napari-assistant.md
+    - file: 02_napari/notebook_export.md
+    - file: 02_napari/interactive_pixel_classification/readme.md
+    - file: 02_napari/interactive_object_classification/readme.md
+
+  - caption: AI-assisted Code Generation
+    chapters:
+    - file: 03_bia_bob/bia-bob-demo.ipynb
+    - file: 03_bia_bob/under_the_hood.ipynb
+    
+  - caption: Links
+    chapters:
+    - file: imprint

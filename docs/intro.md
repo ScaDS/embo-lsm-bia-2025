@@ -6,6 +6,46 @@ This page contains training materials for the BioImage Analysis hands-on tutoria
 
 The notebooks are written for life scientists with basic experience in Python programming. As we have only 2 hours during the hands-on tutorial, it is recommended that everyone picks some exercises according to their skill-level and needs.
 
+## How to use these materials
+
+On the top of the window, you find a Github-Button, which you can use to navigate the repository of the training materials. 
+
+![](00_setup/download1.png)
+
+Download the entire repository as ZIP and unzip the files in a place where you can find them. E.g. on your Desktop.
+
+![](00_setup/download2.png)
+
+After the ZIP has been unpacked, navigate to the `docs` folder of the repository using the terminal. E.g. if you downloaded and unpacked the ZIP file on your Desktop, you can do this like this:
+
+```
+cd Desktop
+```
+or (if you use OneDrive to sync your Desktop)
+```
+cd OneDrive/Desktop
+```
+
+```
+cd embo-lsm-bia-2025-main
+```
+```
+cd docs
+```
+After arriving in this folder, activate your conda environment (if not installed yet, check the [installation instructions](00_setup/readme.md)):
+```
+conda activate embo25
+```
+```
+jupyter lab
+```
+
+![](00_setup/terminal.png)
+
+After executing this, you can start Jupyter Lab. On the left side you find folders with exercise notebooks and on the right side you find the notebooks to work on.
+
+![](00_setup/jupyterlab.png)
+
 ## Covered topics
 
 * Getting started with Jupyter notebooks

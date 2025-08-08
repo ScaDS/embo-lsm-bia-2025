@@ -55,7 +55,6 @@ After executing this, you can start Jupyter Lab. On the left side you find folde
 
 ## Covered Python libraries
 
-* [apoc](https://github.com/haesleinhuepf/apoc): Accelerated Pixel and Object Classification
 * [bia-bob](https://github.com/haesleinhuepf/bia-bob): AI-assisted BioImage Analysis Code Generation
 * [devbio-napari](https://github.com/haesleinhuepf/devbio-napari): A collection of Napari-Plugins for Developmental Biologists
 * [numpy](https://numpy.org/): Basic numeric Processing

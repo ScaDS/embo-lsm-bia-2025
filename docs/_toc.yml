@@ -20,13 +20,12 @@ parts:
     - file: 02_napari/01_napari_introduction.ipynb
     - file: 02_napari/napari-assistant.md
     - file: 02_napari/notebook_export.md
-    - file: 02_napari/interactive_pixel_classification/readme.md
-    - file: 02_napari/interactive_object_classification/readme.md
 
   - caption: AI-assisted Code Generation
     chapters:
     - file: 03_bia_bob/bia-bob-demo.ipynb
     - file: 03_bia_bob/generate_notebook.ipynb
+    - file: 03_bia_bob/bia_bob-statistical_testing.ipynb
     - file: 03_bia_bob/under_the_hood.ipynb
     
   - caption: Links

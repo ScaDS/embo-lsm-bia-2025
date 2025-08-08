@@ -26,6 +26,7 @@ parts:
   - caption: AI-assisted Code Generation
     chapters:
     - file: 03_bia_bob/bia-bob-demo.ipynb
+    - file: 03_bia_bob/generate_notebook.ipynb
     - file: 03_bia_bob/under_the_hood.ipynb
     
   - caption: Links

@@ -14,7 +14,7 @@ See also
 * [Managing Scientific Python environments using Conda, Mamba and friends](https://focalplane.biologists.com/2022/12/08/managing-scientific-python-environments-using-conda-mamba-and-friends/)
 * [Scientific Data Analysis with Python](https://youtu.be/MOEPe9TGBK0)
 
-## Step 1: Install Mini-conda
+## Step 1: Install Mini-forge
 Download and install Conda. We recommend the Conda distribution [mini-forge](https://conda-forge.org/download/).
 
 For ease-of-use, it is recommended to install it for your use only and to add Conda to the PATH variable during installation.

@@ -25,6 +25,7 @@ parts:
     chapters:
     - file: 03_bia_bob/bia-bob-demo.ipynb
     - file: 03_bia_bob/generate_notebook.ipynb
+    - file: 03_bia_bob/translating_notebooks.ipynb
     - file: 03_bia_bob/bia_bob-statistical_testing.ipynb
     - file: 03_bia_bob/under_the_hood.ipynb
     

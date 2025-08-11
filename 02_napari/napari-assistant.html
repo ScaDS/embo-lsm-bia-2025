@@ -668,44 +668,30 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="the-napari-assistant">
 <h1>The Napari Assistant<a class="headerlink" href="#the-napari-assistant" title="Permalink to this heading">#</a></h1>
 <p>The Napari Assistant is a plugin for napari that allows you setting up an image processing workflow.</p>
-<p>This tutorial is also available as video <a class="reference download internal" download="" href="../_downloads/08a6c003389afaf70246539447603377/napari-assistant.mp4"><span class="xref download myst">napari-assistant.mp4</span></a>.</p>
-<p>Start napari from the command line like this:</p>
+<p>Start Napari from the command line like this:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>embo25
 
 napari
 </pre></div>
 </div>
-<p><img alt="" src="../_images/napari-assistant01.jpg" /></p>
-<p>The napari window will open. Click on the menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">Samples</span> <span class="pre">Cells(3D+2Ch)</span></code> to open an example image.</p>
-<p><img alt="" src="../_images/napari-assistant02.jpg" /></p>
+<p><img alt="" src="../_images/terminal.jpg" /></p>
+<p>The napari window will open. Start the Napari Assistant from the <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Utilities</span> <span class="pre">&gt;</span> <span class="pre">Assistant</span> <span class="pre">(na)</span></code> menu.</p>
+<p><img alt="" src="../_images/napari-assistant1_.jpg" /></p>
+<p>Drag &amp; drop Lund.tif (<a class="reference download internal" download="" href="../_downloads/32946bd2ad89d027410a2067d519011a/Lund.tif"><span class="xref download myst">Download here</span></a>)</p>
 <p><img alt="" src="../_images/napari-assistant03.jpg" /></p>
 <p>You can explore this dataset by clicking on the <code class="docutils literal notranslate"><span class="pre">2D/3D</span></code> view button.</p>
 <p><img alt="" src="../_images/napari-assistant04.jpg" /></p>
-<p>Start the Napari Assistant from the <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Utilities</span> <span class="pre">&gt;</span> <span class="pre">Assistant</span> <span class="pre">(na)</span></code> menu.</p>
+<p>Within the <code class="docutils literal notranslate"><span class="pre">Assistant</span></code> panel, click on the <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">background</span></code> button.</p>
 <p><img alt="" src="../_images/napari-assistant05.jpg" /></p>
-<p>Within the <code class="docutils literal notranslate"><span class="pre">Assistant</span></code> panel, click on the <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">noise</span></code> button.</p>
+<p>Click on the <code class="docutils literal notranslate"><span class="pre">Eye</span></code> buttons in the layer list to switch between the original image and the result of the <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">background</span></code> step.</p>
 <p><img alt="" src="../_images/napari-assistant06.jpg" /></p>
-<p>Click on the <code class="docutils literal notranslate"><span class="pre">Eye</span></code> buttons in the layer list to hide the original image and show the result of the <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">noise</span></code> step only.</p>
+<p>Click on the <code class="docutils literal notranslate"><span class="pre">Label</span></code> button in the Assistant panel to add a new step to the workflow that generates a label image from the current layer.</p>
 <p><img alt="" src="../_images/napari-assistant07.jpg" /></p>
-<p>Click on the <code class="docutils literal notranslate"><span class="pre">Binarize</span></code> button in the Assistant panel to add a new step to the workflow that generates a binary image from the current layer.</p>
+<p>Toggle 2D/3D view and layer visibility to explore the result of the <code class="docutils literal notranslate"><span class="pre">Label</span></code> step.</p>
 <p><img alt="" src="../_images/napari-assistant08.jpg" /></p>
-<p>Toggle 2D/3D view and layer visibility to explore the result of the <code class="docutils literal notranslate"><span class="pre">Binarize</span></code> step.</p>
-<p><img alt="" src="../_images/napari-assistant09.jpg" /></p>
 <p>After switching back to 2D view, click the <code class="docutils literal notranslate"><span class="pre">Label</span></code> button in the Assistant and choose the operation <code class="docutils literal notranslate"><span class="pre">Connected</span> <span class="pre">component</span> <span class="pre">labeling</span> <span class="pre">(clEsperanto)</span></code>.</p>
-<p><img alt="" src="../_images/napari-assistant11.jpg" /></p>
-<p>Select the <code class="docutils literal notranslate"><span class="pre">Result</span> <span class="pre">of</span> <span class="pre">gaussian_blur</span></code> layer in the layer list and modify its <code class="docutils literal notranslate"><span class="pre">sigma</span></code> parameters. You will note that the subsequent steps (Threshold Otsu and Connected Component Labeling) are also updated.</p>
-<p><img alt="" src="../_images/napari-assistant12.jpg" /></p>
-<p>Switch to grid view, show all layers using their <code class="docutils literal notranslate"><span class="pre">Eye</span></code> buttons and continue modifying the parameters.</p>
-<p><img alt="" src="../_images/napari-assistant13.jpg" /></p>
-<p><img alt="" src="../_images/napari-assistant14.jpg" /></p>
-<p>Close all layers except <code class="docutils literal notranslate"><span class="pre">nuclei</span></code> and <code class="docutils literal notranslate"><span class="pre">membrane</span></code>.</p>
-<p><img alt="" src="../_images/napari-assistant15.jpg" /></p>
-<p>Turn of Gridview and click again on the <code class="docutils literal notranslate"><span class="pre">Label</span></code> button in the Assistant.</p>
-<p><img alt="" src="../_images/napari-assistant16.jpg" /></p>
-<p>This time, do not change the operation but the <code class="docutils literal notranslate"><span class="pre">spot_sigma</span></code> parameter instead.</p>
-<p><img alt="" src="../_images/napari-assistant17.jpg" /></p>
-<p>Toggle again to 3D view and inspect the result of this single step.</p>
-<p><img alt="" src="../_images/napari-assistant18.jpg" /></p>
+<p>Explore other options and parameters.</p>
+<p><img alt="" src="../_images/napari-assistant09.jpg" /></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -778,7 +764,7 @@ By Robert Haase
   
   <div class="footer-item">
     <p class="last-updated">
-Last updated on 2025-08-08.<br>
+Last updated on 2025-08-11.<br>
 </p>
   </div>
   

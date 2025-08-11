@@ -668,30 +668,13 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="generating-jupyter-notebooks-from-the-napari-assistant">
 <h1>Generating Jupyter Notebooks from the Napari Assistant<a class="headerlink" href="#generating-jupyter-notebooks-from-the-napari-assistant" title="Permalink to this heading">#</a></h1>
 <p>After setting  up a workflow using the Napari Assistant, we can export Python code, e.g. as Jupyter Notebook.</p>
-<p>This tutorial is also available as video <a class="reference download internal" download="" href="../_downloads/f73a1e88dcbdfaec48594e5eecbefc5f/export_notebooks.mp4"><span class="xref download myst">export_notebooks.mp4</span></a></p>
-<p>In the Assistant panel, click on the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Code...</span></code> button and the <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">Jupyter</span> <span class="pre">Notebook</span> <span class="pre">using</span> <span class="pre">Napari</span></code> menu.</p>
+<p>In the Assistant panel, click on the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Code...</span></code> button and the <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">Jupyter</span> <span class="pre">Notebook</span></code> menu.</p>
 <p><img alt="" src="../_images/export_notebooks01.jpg" /></p>
 <p>Jupyter lab will open and ask you to select a Kernel. Keep the default option and click on <code class="docutils literal notranslate"><span class="pre">Select</span></code>.</p>
 <p><img alt="" src="../_images/export_notebooks02.jpg" /></p>
-<p>When executing the notebook, errors may appear, e.g. when loading the data.</p>
+<p>Using SHIFT+ENTER you can execute cells one by one and reporoduce the image analysis workflow.</p>
 <p><img alt="" src="../_images/export_notebooks03.jpg" /></p>
-<p>Scroll down to the end of the error message to read what didn’t work.</p>
-<p><img alt="" src="../_images/export_notebooks04.jpg" /></p>
-<p>Scoll up again to the notebook cell that didn’t work and modify the code so that it uses the <code class="docutils literal notranslate"><span class="pre">imread</span></code> function to load the image from disc.</p>
-<p><img alt="" src="../_images/export_notebooks05.jpg" /></p>
-<p>In case you don’t have the <code class="docutils literal notranslate"><span class="pre">nuclei</span></code> image saved on disc already, use the menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save</span> <span class="pre">current</span> <span class="pre">Layer(s)</span></code> to save the <code class="docutils literal notranslate"><span class="pre">nuclei</span></code> layer as <code class="docutils literal notranslate"><span class="pre">.tif</span></code> file.</p>
-<p><img alt="" src="../_images/export_notebooks06.jpg" /></p>
-<p>Afterwards, rerun the notebook and inspect the result. The Napari viewer that opened in the background will also be shown within the notebook.</p>
-<p><img alt="" src="../_images/export_notebooks07.jpg" /></p>
-<p>If you also want to view the raw image data together with the segmentation result, add these lines to your code:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span><span class="p">(</span><span class="n">image0_n</span><span class="p">)</span>
-<span class="n">napari</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">nbscreenshot</span><span class="p">(</span><span class="n">viewer</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><img alt="" src="../_images/export_notebooks08.jpg" /></p>
-<p>Rerun the notebook, or modify the order of layers manually in the Napari viewer. At the end it should look like this.</p>
-<p><img alt="" src="../_images/export_notebooks09.jpg" /></p>
-<p>Voila! You have now generated a Jupyter Notebook from a Napari Assistant workflow. This notebook documents your work reproducibly and can be shared with others.</p>
+<p>Edit the parameters and see how results change. Also export another notebook using the menu “Export Jupyter Notebook using Napari”.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -764,7 +747,7 @@ By Robert Haase
   
   <div class="footer-item">
     <p class="last-updated">
-Last updated on 2025-08-08.<br>
+Last updated on 2025-08-11.<br>
 </p>
   </div>
   
